@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Care Hub - Educational Guides</title>
+    <style>
+        :root {
+            --primary: #0e8388;
+            --secondary: #f2a900;
+            --dark: #1b262c;
+            --light: #f4f7f4;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--secondary);
+        }
+
+        .page-banner {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 3.5rem 1rem;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 3.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .guide-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            margin-bottom: 2.5rem;
+        }
+
+        .guide-header {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .guide-thumb {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .guide-card h2 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-card ul {
+            margin-left: 1.5rem;
+            margin-top: 0.8rem;
+        }
+
+        .guide-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 600px) {
+            .guide-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .guide-thumb {
+                width: 100%;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">☀️ EcoClean Solar</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services & Pricing</a>
+            <a href="guides.html" class="active">Solar Care Hub</a>
+            <a href="contact.html">Request Quote</a>
+        </nav>
+    </header>
+
+    <div class="page-banner">
+        <h1>Solar Educational & Care Guides</h1>
+        <p>Learn how proper maintenance maximizes solar longevity, safety, and financial return.</p>
+    </div>
+
+    <div class="container">
+
+        <article class="guide-card">
+            <div class="guide-header">
+                <img src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&fit=crop&w=400&q=80" alt="Water Washing Panel" class="guide-thumb">
+                <div>
+                    <h2>1. The Science: Why Tap Water & Soap Damage Solar Glass</h2>
+                    <p>It can be tempting to spray rooftop panels with a garden hose or soapy bucket. However, untreated tap water contains calcium, magnesium, and dissolved minerals that cause permanent hard-water staining upon evaporation.</p>
+                </div>
+            </div>
+            <p>Soap leaves behind a thin sticky film layer on panel surfaces. While clean initially, this film acts like a magnet for pollen, fine dust, and vehicle exhaust emissions—causing your panels to re-dirty twice as fast as panels cleaned with pure deionized water.</p>
+        </article>
+
+        <article class="guide-card">
+            <div class="guide-header">
+                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=400&q=80" alt="Blocked Solar Cell" class="guide-thumb">
+                <div>
+                    <h2>2. Understanding Hotspots and Micro-Cracks</h2>
+                    <p>Accumulated debris or dried bird droppings do more than look unsightly—they cause physical electrical hazards within your array through cell overloading.</p>
+                </div>
+            </div>
+            <p>When a section of a panel is blocked from light, it stops producing electricity and turns into an electrical resistance point. Surrounding cells force energy through this resistance, generating extreme localized heat points ("hotspots"). Hotspots can crack panel glass, burn internal solder joints, and cause permanent diode failures.</p>
+        </article>
+
+        <article class="guide-card">
+            <div class="guide-header">
+                <img src="https://images.unsplash.com/photo-1548611716-300298248872?auto=format&fit=crop&w=400&q=80" alt="Pigeon Prevention Mesh" class="guide-thumb">
+                <div>
+                    <h2>3. Bird Pest Prevention: Protecting Under-Panel Wiring</h2>
+                    <p>The gap underneath solar rooftop arrays offers shelter for pigeons and pests. Nesting activity creates severe long-term maintenance issues.</p>
+                </div>
+            </div>
+            <ul>
+                <li><strong>Wire Damage:</strong> Rodents and birds nest near warm conduits, frequently chewing or clawing through critical insulation cabling.</li>
+                <li><strong>Fire Hazards:</strong> Dry leaves, twigs, and nesting materials packed beneath hot solar panels create immediate fire hazards.</li>
+                <li><strong>Corrosive Droppings:</strong> Highly acidic bird waste quickly corrodes aluminum panel mounting frames and copper wiring connections.</li>
+            </ul>
+        </article>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 EcoClean Solar Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

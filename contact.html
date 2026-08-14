@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Quote - EcoClean Solar Solutions</title>
+    <style>
+        :root {
+            --primary: #0e8388;
+            --secondary: #f2a900;
+            --dark: #1b262c;
+            --light: #f4f7f4;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--secondary);
+        }
+
+        .page-banner {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 3.5rem 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 3.5rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .info-box, .form-box {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+        }
+
+        .info-box h2, .form-box h2 {
+            color: var(--primary);
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .btn-submit {
+            background-color: var(--secondary);
+            color: var(--dark);
+            border: none;
+            padding: 0.9rem 1.8rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #d99700;
+        }
+
+        .map-section {
+            max-width: 1000px;
+            margin: 0 auto 3.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .map-container {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+        }
+
+        .map-frame {
+            width: 100%;
+            height: 350px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">☀️ EcoClean Solar</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services & Pricing</a>
+            <a href="guides.html">Solar Care Hub</a>
+            <a href="contact.html" class="active">Request Quote</a>
+        </nav>
+    </header>
+
+    <div class="page-banner">
+        <h1>Request an Instant Estimate</h1>
+        <p>Complete the form below to receive a personalized system maintenance quote within 24 hours.</p>
+    </div>
+
+    <div class="container">
+
+        <div class="info-box">
+            <h2>Contact & Operational Hours</h2>
+            <p><strong>Customer Support:</strong> +27 (0) 11 000 0000</p>
+            <br>
+            <p><strong>WhatsApp Inquiries:</strong> +27 (0) 82 000 0000</p>
+            <br>
+            <p><strong>Email:</strong> support@ecocleansolar.co.za</p>
+            <br>
+            <p><strong>Service Hours:</strong><br>Monday – Friday: 07:00 – 17:30<br>Saturday: 08:00 – 14:00</p>
+            <br>
+            <p><strong>Coverage Areas:</strong> Dispatch hubs servicing residential suburbs, industrial developments, and regional agricultural sites.</p>
+        </div>
+
+        <div class="form-box">
+            <h2>System Details</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" required placeholder="Enter full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="contactnum">Phone / WhatsApp Number</label>
+                    <input type="tel" id="contactnum" required placeholder="Enter contact number">
+                </div>
+
+                <div class="form-group">
+                    <label for="system-type">Installation Type</label>
+                    <select id="system-type">
+                        <option value="residential">Residential Rooftop</option>
+                        <option value="commercial">Commercial / Industrial Park</option>
+                        <option value="agricultural">Agricultural / Ground Mount</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="panels">Estimated Number of Panels</label>
+                    <input type="number" id="panels" placeholder="e.g. 12">
+                </div>
+
+                <div class="form-group">
+                    <label for="last-cleaned">Last Time Cleaned</label>
+                    <select id="last-cleaned">
+                        <option value="never">Never / Brand New</option>
+                        <option value="6months">Within last 6 months</option>
+                        <option value="year">Over 1 year ago</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Details / Address</label>
+                    <textarea id="notes" rows="3" placeholder="Mention roof height, pigeon issues, or specific access instructions..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Quote Request</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="map-section">
+        <div class="map-container">
+            <h2 style="color: var(--primary); margin-bottom: 0.5rem;">Regional Operations Hub</h2>
+            <p style="color: #666; margin-bottom: 1.5rem;">Dispatching specialized cleaning crews across Gauteng and surrounding industrial zones.</p>
+            <iframe 
+                class="map-frame" 
+                src="https://maps.google.com/maps?q=Gauteng,South%20Africa&t=&z=10&ie=UTF8&iwloc=&output=embed" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 EcoClean Solar Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

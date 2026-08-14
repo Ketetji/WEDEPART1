@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Pricing - EcoClean Solar Solutions</title>
+    <style>
+        :root {
+            --primary: #0e8388;
+            --secondary: #f2a900;
+            --dark: #1b262c;
+            --light: #f4f7f4;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--secondary);
+        }
+
+        .page-banner {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 3.5rem 1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 3.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+        }
+
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 1.8rem;
+        }
+
+        .service-content h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            margin-bottom: 3rem;
+        }
+
+        .pricing-table th, .pricing-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pricing-table th {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .faq-section {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        .faq-item h3 {
+            color: var(--primary);
+            margin-bottom: 0.4rem;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-table th, .pricing-table td {
+                padding: 0.75rem 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">☀️ EcoClean Solar</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html" class="active">Services & Pricing</a>
+            <a href="guides.html">Solar Care Hub</a>
+            <a href="contact.html">Request Quote</a>
+        </nav>
+    </header>
+
+    <div class="page-banner">
+        <h1>Services & Maintenance Plans</h1>
+        <p>Tailored solar cleaning solutions for home rooftops, commercial sites, and agricultural facilities.</p>
+    </div>
+
+    <div class="container">
+
+        <div class="grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" alt="Residential Solar Cleaning" class="service-img">
+                <div class="service-content">
+                    <h3>Residential Roof Services</h3>
+                    <p>Ideal for home systems (6 to 30 panels). Complete deionized pure-water glass wash, frame clutter clearance, and visual cabling check.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80" alt="Commercial Solar Installation" class="service-img">
+                <div class="service-content">
+                    <h3>Commercial & Industrial Arrays</h3>
+                    <p>Automated, scheduled maintenance for office parks, factories, and retail centers. Flexible off-peak operating hours to suit your business.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=800&q=80" alt="Pigeon Mesh & Diagnostics" class="service-img">
+                <div class="service-content">
+                    <h3>Bird Proofing & Thermal Scans</h3>
+                    <p>Galvanized steel mesh installation around panel perimeters to prevent nesting pigeons, combined with thermal drone cell diagnostic scans.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="color: var(--primary); margin-bottom: 1.5rem; text-align: center;">Service Comparison</h2>
+        
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Feature & Inclusions</th>
+                    <th>One-Off Clean</th>
+                    <th>Bi-Annual Care</th>
+                    <th>Premium Care & Diagnostics</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Deionized Pure Water Wash</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Visual Inverter & Cable Check</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Scheduled Automated Visit</td>
+                    <td>No</td>
+                    <td>Yes (Discounted Rate)</td>
+                    <td>Yes (Priority Booking)</td>
+                </tr>
+                <tr>
+                    <td>Thermal Drone Hotspot Scan</td>
+                    <td>Add-on option</td>
+                    <td>Add-on option</td>
+                    <td>Included</td>
+                </tr>
+                <tr>
+                    <td>Bird Pest Mesh Inspection</td>
+                    <td>No</td>
+                    <td>Included</td>
+                    <td>Included</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="faq-section">
+            <h2 style="color: var(--primary); margin-bottom: 1.5rem; text-align: center;">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>How often should my solar panels be cleaned?</h3>
+                <p>For standard residential areas, bi-annual cleaning (every 6 months) maintains peak efficiency. Systems near busy roads, construction sites, or farmlands benefit from quarterly cleans due to heavier dust accumulation.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does rainfall clean solar panels naturally?</h3>
+                <p>Rain removes light surface dust, but it acts like rain on a car windshield—leaving mud streaks, mineral spots, and soot film behind. Specialized pure-water scrubbing is required to lift stubborn film layers.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Will cleaning scratch my panel glass or void warranty?</h3>
+                <p>No. We use ultra-soft nylon bristles engineered specifically for solar glass paired with non-pressurized pure water. We never use chemicals or harsh abrasive pads that invalidate manufacturer warranties.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 EcoClean Solar Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
